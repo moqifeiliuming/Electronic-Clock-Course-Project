@@ -1,32 +1,21 @@
-ÊµÑéÆ÷²Ä:
-	MiniSTM32F103¿ª·¢°åV3°æ±¾
+å®žéªŒå™¨æ:
+	MiniSTM32F103å¼€å‘æ¿V3ç‰ˆæœ¬
 	
-ÊµÑéÄ¿µÄ:
-	Ñ§Ï°²ÊÉ«TFTLCDÏÔÊ¾ÆÁµÄÊ¹ÓÃ
+å®žéªŒç›®çš„:
+	å­¦ä¹ å½©è‰²TFTLCDæ˜¾ç¤ºå±çš„ä½¿ç”¨
 	
-Ó²¼þ×ÊÔ´:
-	1,DS0(Á¬½ÓÔÚPA8) 
-	2,´®¿Ú1(²¨ÌØÂÊ:9600,PA9/PA10Á¬½ÓÔÚ°åÔØUSB×ª´®¿ÚÐ¾Æ¬CH340ÉÏÃæ)
-	3,ALIENTEK 2.8/3.5/4.3/7´çTFTLCDÄ£¿é(Í¨¹ýGPIOÇý¶¯,Á¬½Ó¹ØÏµ¼ûlcd.h) 
+ç¡¬ä»¶èµ„æº:
+	1,DS0(è¿žæŽ¥åœ¨PA8) 
+	2,ä¸²å£1(æ³¢ç‰¹çŽ‡:9600,PA9/PA10è¿žæŽ¥åœ¨æ¿è½½USBè½¬ä¸²å£èŠ¯ç‰‡CH340ä¸Šé¢)
+	3,ALIENTEK 2.8/3.5/4.3/7å¯¸TFTLCDæ¨¡å—(é€šè¿‡GPIOé©±åŠ¨,è¿žæŽ¥å…³ç³»è§lcd.h) 
 	
-ÊµÑéÏÖÏó:
-	±¾ÊµÑéÀûÓÃMiniSTM32¿ª·¢°åÁ¬½ÓALIENTEK TFTLCDÄ£¿é(³ýCPLD°æ±¾7´çÆÁÄ£¿éÍâ,ÆäÓàËùÓÐALIENTEKµÄ
-	LCDÄ£¿é¶¼¿ÉÒÔÖ§³Ö)£¬ÊµÏÖTFTLCDÄ£¿éµÄÏÔÊ¾£¬ÏÂÔØ³É¹¦ºó£¬Í¨¹ý°ÑLCDÄ£¿é²åÈëTFTLCDÄ£¿é½Ó¿Ú£¨¿¿ÓÒ
-	²å£©£¬°´ÏÂ¸´Î»Ö®ºó£¬¾Í¿ÉÒÔ¿´µ½LCDÄ£¿é²»Í£µÄÏÔÊ¾Ò»Ð©ÐÅÏ¢²¢²»¶ÏÇÐ»»µ×É«¡£Í¬Ê±¸ÃÊµÑé»áÏÔÊ¾LCDÇý
-	¶¯Æ÷µÄID£¬²¢ÇÒ»áÔÚ´®¿Ú´òÓ¡£¨°´¸´Î»Ò»´Î£¬´òÓ¡Ò»´Î£©¡£
+å®žéªŒçŽ°è±¡:
+	æœ¬å®žéªŒåˆ©ç”¨MiniSTM32å¼€å‘æ¿è¿žæŽ¥ALIENTEK TFTLCDæ¨¡å—(é™¤CPLDç‰ˆæœ¬7å¯¸å±æ¨¡å—å¤–,å…¶ä½™æ‰€æœ‰ALIENTEKçš„
+	LCDæ¨¡å—éƒ½å¯ä»¥æ”¯æŒ)ï¼Œå®žçŽ°TFTLCDæ¨¡å—çš„æ˜¾ç¤ºï¼Œä¸‹è½½æˆåŠŸåŽï¼Œé€šè¿‡æŠŠLCDæ¨¡å—æ’å…¥TFTLCDæ¨¡å—æŽ¥å£ï¼ˆé å³
+	æ’ï¼‰ï¼ŒæŒ‰ä¸‹å¤ä½ä¹‹åŽï¼Œå°±å¯ä»¥çœ‹åˆ°LCDæ¨¡å—ä¸åœçš„æ˜¾ç¤ºä¸€äº›ä¿¡æ¯å¹¶ä¸æ–­åˆ‡æ¢åº•è‰²ã€‚åŒæ—¶è¯¥å®žéªŒä¼šæ˜¾ç¤ºLCDé©±
+	åŠ¨å™¨çš„IDï¼Œå¹¶ä¸”ä¼šåœ¨ä¸²å£æ‰“å°ï¼ˆæŒ‰å¤ä½ä¸€æ¬¡ï¼Œæ‰“å°ä¸€æ¬¡ï¼‰ã€‚
 	
-×¢ÒâÊÂÏî:  
-	1,4.3´çºÍ7´çÆÁÐèÒª±È½Ï´óµçÁ÷,USB¹©µç¿ÉÄÜ²»×ã,ÇëÓÃÍâ²¿µçÔ´¹©µç(5VµçÔ´£¬½ÓVOUT2¼´¿É).
-	2,±¾Àý³ÌÔÚLCD_Initº¯ÊýÀïÃæ(ÔÚILI93xx.c),ÓÃµ½ÁËprintf,Èç¹û²»³õÊ¼»¯´®¿Ú1,½«µ¼ÖÂÒº¾§ÎÞ·¨ÏÔÊ¾!! 
-	3,LCDÄ£¿éÔÚ¿ª·¢°åµÄLCD½Ó¿ÚÉÏÃæ£¬±ØÐë¿¿ÓÒ²å¡£ 
-	
-	
-					ÕýµãÔ­×Ó@ALIENTEK
-					2014-3-07
-					¹ãÖÝÊÐÐÇÒíµç×Ó¿Æ¼¼ÓÐÏÞ¹«Ë¾
-					µç»°£º020-38271790
-					´«Õæ£º020-36773971
-					¹ºÂò£ºhttp://shop62103354.taobao.com
-					http://shop62057469.taobao.com
-					¹«Ë¾ÍøÕ¾£ºwww.alientek.com
-					¼¼ÊõÂÛÌ³£ºwww.openedv.com
+æ³¨æ„äº‹é¡¹:  
+	1,4.3å¯¸å’Œ7å¯¸å±éœ€è¦æ¯”è¾ƒå¤§ç”µæµ,USBä¾›ç”µå¯èƒ½ä¸è¶³,è¯·ç”¨å¤–éƒ¨ç”µæºä¾›ç”µ(5Vç”µæºï¼ŒæŽ¥VOUT2å³å¯).
+	2,æœ¬ä¾‹ç¨‹åœ¨LCD_Initå‡½æ•°é‡Œé¢(åœ¨ILI93xx.c),ç”¨åˆ°äº†printf,å¦‚æžœä¸åˆå§‹åŒ–ä¸²å£1,å°†å¯¼è‡´æ¶²æ™¶æ— æ³•æ˜¾ç¤º!! 
+	3,LCDæ¨¡å—åœ¨å¼€å‘æ¿çš„LCDæŽ¥å£ä¸Šé¢ï¼Œå¿…é¡»é å³æ’ã€‚ 
